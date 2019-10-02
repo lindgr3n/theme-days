@@ -1,35 +1,61 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        themedays
-      </h1>
-      <h2 class="subtitle">
-        Next theme day
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+    <div v-for="(theme, index) in themedays" :key="index" class="p-4">
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img
+          class="h-48 w-full object-cover"
+          :src="theme.img"
+          alt="Sunset in the mountains"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">{{ theme.title[locale] }}</div>
+          {{ formatDate(theme.date) }} kvar!
+        </div>
       </div>
     </div>
+    <footer class="fixed absolut bottom-0 right-0 p-4">
+      Data from https://temadagar.se
+    </footer>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import formatDistanceStrict from 'date-fns/formatDistanceStrict'
+import parse from 'date-fns/parse'
+import { enGB, eo, ru, sv } from 'date-fns/locale'
+import calender from '~/static/kalender.json'
 
 export default {
-  components: {
-    Logo
+  components: {},
+  data() {
+    return {
+      themedays: calender.themedays
+    }
+  },
+
+  computed: {
+    locale() {
+      return 'sv'
+    },
+
+    locales() {
+      return { enGB, eo, ru, sv }
+    }
+  },
+
+  methods: {
+    formatDate(toDate) {
+      if (!toDate) {
+        return ''
+      }
+
+      const date = new Date()
+      return formatDistanceStrict(
+        new Date(date.getFullYear(), date.getMonth(), date.getDate()),
+        parse(toDate, 'yyyyMMdd', date, { weekStartsOn: 1 }),
+        { locale: this.locales[this.locale] }
+      )
+    }
   }
 }
 </script>
@@ -44,6 +70,7 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
