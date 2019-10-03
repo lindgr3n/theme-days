@@ -1,21 +1,15 @@
 <template>
   <div class="container">
     <div v-for="(theme, index) in themedays" :key="index" class="p-4">
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <img
-          class="h-48 w-full object-cover"
-          :src="theme.img"
-          alt="Sunset in the mountains"
-        />
+      <div class="max-w-sm rounded overflow-hidden shadow-lg scale">
+        <img class="h-48 w-full object-cover" :src="theme.img" alt="Sunset in the mountains" />
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">{{ theme.title[locale] }}</div>
           {{ formatDate(theme.date) }} kvar!
         </div>
       </div>
     </div>
-    <footer class="fixed absolut bottom-0 right-0 p-4">
-      Data from https://temadagar.se
-    </footer>
+    <footer class="fixed absolut bottom-0 right-0 p-4">Data from https://temadagar.se</footer>
   </div>
 </template>
 
@@ -77,8 +71,8 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
@@ -96,5 +90,13 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+.scale {
+  transition-property: all;
+  transition-duration: 200ms;
+}
+.scale:hover {
+  transform: scale(1.1);
 }
 </style>
