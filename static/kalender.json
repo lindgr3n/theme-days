@@ -1,28 +1,95 @@
-{ 
+{
   "themedays": [
     {
       "date": "20191004",
-      "title": {"sv": "Kanelbullens dag"},
-      "img":
-        "https://images.unsplash.com/photo-1509365465985-25d11c17e812?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      "title": {
+        "sv": "Kanelbullens dag"
+      },
+      "img": "https://images.unsplash.com/photo-1509365465985-25d11c17e812?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
     },
     {
       "date": "20191006",
-      "title": {"sv": "Gräddtårtans dag"},
-      "img":
-        "https://images.unsplash.com/photo-1530805041030-d9c5c49bbbc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+      "title": {
+        "sv": "Gräddtårtans dag"
+      },
+      "img": "https://images.unsplash.com/photo-1530805041030-d9c5c49bbbc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+    },
+    {
+      "date": "20191010",
+      "title": {
+        "sv": "Grötens dag"
+      },
+      "img": ""
     },
     {
       "date": "20191011",
-      "title": {"sv": "Äggets dag"},
-      "img":
-        "https://images.unsplash.com/photo-1521513919009-be90ad555598?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1978&q=80"
+      "title": {
+        "sv": "Äggets dag"
+      },
+      "img": "https://images.unsplash.com/photo-1521513919009-be90ad555598?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1978&q=80"
     },
     {
       "date": "20191011",
-      "title": {"sv": "Äpplemustens Dag"},
-      "img":
-        "https://images.unsplash.com/photo-1509459829686-bbbe08dd5d1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2132&q=80"
+      "title": {
+        "sv": "Äpplemustens Dag"
+      },
+      "img": "https://images.unsplash.com/photo-1509459829686-bbbe08dd5d1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2132&q=80"
+    },
+    {
+      "date": "20191014",
+      "title": {
+        "sv": "Räkmackans dag"
+      },
+      "img": ""
+    },
+    {
+      "date": "20191015",
+      "title": {
+        "sv": "Fetaostens dag"
+      },
+      "img": ""
+    },
+    {
+      "date": "20191017",
+      "title": {
+        "sv": "Grynkorvens dag"
+      },
+      "img": ""
+    },
+    {
+      "date": "20191018",
+      "title": {
+        "sv": "Chokladmuffins dag"
+      },
+      "img": ""
+    },
+    {
+      "date": "20191018",
+      "title": {
+        "sv": "Internationella champagnedagen"
+      },
+      "img": ""
+    },
+    {
+      "date": "20191025",
+      "title": {
+        "sv": "Världspastadagen"
+      },
+      "img": ""
+    },
+    {
+      "date": "20191026",
+      "title": {
+        "sv": "Hackkorvens dag"
+      },
+      "img": ""
+    },
+    {
+      "date": "20191026",
+      "title": {
+        "sv": "Potatisens dag"
+      },
+      "img": ""
     }
   ]
 }
