@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-    <footer class="fixed absolut bottom-0 right-0 p-4">Data from https://temadagar.se</footer>
+    <footer class="fixed absolut bottom-0 right-0 p-4">Data from https://temadagar.se !</footer>
   </div>
 </template>
 
